@@ -213,11 +213,14 @@ a {
     width: 18em;
     padding: 1em;
     display: inline-block;
+    vertical-align: top;
 }
 
 /*LOCATION PAGE*/
 .location {
     text-align: center;
+    width: 50em;
+    margin: auto;
 }
 
 .locationtext {

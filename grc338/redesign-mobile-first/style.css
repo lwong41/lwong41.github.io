@@ -65,9 +65,8 @@ a {
     margin: 2em 0 0 0;
 }
 
-.topmenu p {
+.topmenu {
     text-align: center;
-    margin: 0 0 2em 0;
 }
 
 .menu h2, h3 {

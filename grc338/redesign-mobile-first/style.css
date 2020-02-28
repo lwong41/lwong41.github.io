@@ -267,13 +267,17 @@ a:hover {
 @media only screen and (max-width: 30em) {
     .location {
         clear: both;
+        width: 100%;
     }
     .locationtext {
         display: inline;
     }
+    .locationpic {
+        width: 100%;
+    }
     .locationpic img {
         height: 8em;
-        width: 12.5em;
+        max-width: 85%;
     }
 }
 

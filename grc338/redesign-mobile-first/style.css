@@ -2,6 +2,7 @@
 body {
     background-color: #FFFDB8;
     font-family: Raleway, sans-serif;
+    margin: 0;
 }
 
 img {
@@ -31,7 +32,7 @@ img {
     
 @media only screen and (max-width: 30em) {
     .nav li {
-        font-size: 0.5em;
+        font-size: 0.9em;
     }
 }
 
@@ -274,6 +275,7 @@ a:hover {
         width: 100%;
     }
     .locationpic img {
+        clear: both;
         height: 10em;
         max-width: 75%;
     }
@@ -287,4 +289,10 @@ a:hover {
 
 .photos {
     float: left;
+}
+
+@media only screen and (max-width: 30em) {
+    .photos img {
+        width: 40%;
+    }
 }

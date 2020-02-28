@@ -1,7 +1,7 @@
 /*CSS DOCUMENT*/
 body {
     background-color: #FFFDB8;
-    font-family: sans-serif;
+    font-family: Raleway, sans-serif;
 }
 
 img {
@@ -23,14 +23,24 @@ img {
 .nav li {
     display: inline;
     margin-right: 2em;
-    font-size: 1.2em;
     text-transform: uppercase;
+    font-size: 1.5em;
     color: rgb(0, 0, 0);
     font-weight: bold;
+}
+    
+@media only screen and (max-width: 30em) {
+    .nav li {
+        font-size: 0.5em;
+    }
 }
 
 a {
     color: #CC414F;
+}
+
+a:hover {
+    color: rgb(0, 0, 0);
 }
 
 .footer {
@@ -39,6 +49,9 @@ a {
     margin-top: 3em;
     padding: 1em;
     background-color: rgb(255, 255, 255);
+    position: absolute;
+    width: 100%;
+    left: 0;
 }
 
 .footer h3 {
@@ -249,6 +262,19 @@ a {
 .locationpic img {
     height: 16em;
     width: 25em;
+}
+
+@media only screen and (max-width: 30em) {
+    .location {
+        clear: both;
+    }
+    .locationtext {
+        display: inline;
+    }
+    .locationpic img {
+        height: 8em;
+        width: 12.5em;
+    }
 }
 
 /*GALLERY PAGE*/

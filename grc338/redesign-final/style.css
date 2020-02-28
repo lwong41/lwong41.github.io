@@ -1,0 +1,299 @@
+/*CSS DOCUMENT*/
+body {
+    background-color: #FFFDB8;
+    font-family: Raleway, sans-serif;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    margin-top: 2em;
+}
+
+/*EVERY PAGE*/
+.header {
+    margin: 0 5em;
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.nav li {
+    display: inline;
+    margin-right: 2em;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+    
+@media only screen and (max-width: 30em) {
+    .nav li {
+        font-size: 0.8em;
+        margin: auto auto auto 1em;
+    }
+}
+
+a {
+    color: #CC414F;
+}
+
+a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.footer {
+    clear: both;
+    text-align: center;
+    margin-top: 3em;
+    padding: 1em;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.footer h3 {
+    color: #CC414F;
+}
+
+/*HOME PAGE*/
+.aboutus {
+    margin: 0 3em;
+}
+
+/*MENU PAGE*/
+.menu ul {
+    list-style-type: none;
+}
+
+.menu h1, h2 {
+    text-align: center;
+    clear: both;
+    text-transform: uppercase;
+}
+
+.menu h1 {
+    margin: 2em 0 0 0;
+}
+
+.topmenu {
+    text-align: center;
+}
+
+.menu h2, h3 {
+    color: #CC414F;
+}
+
+.menu h3 {
+    text-align: center;
+}
+
+.appetizers h4 {
+    margin: 0;
+}
+.appetizers h5 {
+    margin: 0 0 1em 0;
+}
+
+.salad h4 {
+    margin: 0;
+}
+.salad h5 {
+    margin: 0 0 1em 0;
+}
+
+.plainroll h4 {
+    margin: 0;
+}
+.plainroll h5 {
+    margin: 0 0 1em 0;
+}
+
+.nigiri h4 {
+    margin: 0;
+}
+.nigiri h5 {
+    margin: 0 0 1em 0;
+}
+
+.special h4 {
+    margin: 0;
+}
+.special p {
+    margin: 0;
+}
+.special h5 {
+    margin: 0 0 1em 0;
+}
+
+.signature h4 {
+    margin: 0;
+}
+.signature p {
+    margin: 0;
+}
+.signature h5 {
+    margin: 0 0 1em 0;
+}
+
+.sashimi h4 {
+    margin: 0;
+}
+.sashimi h5 {
+    margin: 0 0 1em 0;
+}
+
+.chefcombo h4 {
+    margin: 0;
+}
+.chefcombo h5 {
+    margin: 0 0 1em 0;
+}
+
+.dinnercombo h4 {
+    margin: 0;
+}
+.dinnercombo h5 {
+    margin: 0 0 1em 0;
+}
+
+.side h4 {
+    margin: 0;
+}
+.side h5 {
+    margin: 0 0 1em 0;
+}
+
+.noodles h4 {
+    margin: 0;
+}
+.noodles h5 {
+    margin: 0 0 1em 0;
+}
+
+.kitchenfood h4 {
+    margin: 0;
+}
+.kitchenfood h5 {
+    margin: 0 0 1em 0;
+}
+
+.kids h4 {
+    margin: 0;
+}
+.kids p {
+    margin: 0;
+}
+.kids h5 {
+    margin: 0 0 1em 0;
+}
+
+.tuesday h4 {
+    margin: 0;
+}
+.tuesday h5 {
+    margin: 0 0 1em 0;
+}
+
+.lunchcombo h4 {
+    margin: 0;
+}
+.lunchcombo h5 {
+    margin: 0 0 1em 0;
+}
+
+.partytray h4 {
+    margin: 0;
+}
+.partytray p {
+    margin: 0;
+}
+.partytray h5 {
+    margin: 0 0 1em 0;
+}
+
+.happyhr h4 {
+    margin: 0;
+}
+.happyhr h5 {
+    margin: 0 0 1em 0;
+}
+
+.appetizers, .salad, .plainroll, .nigiri, .special, .signature, .sashimi, .chefcombo, .dinnercombo, .side, .noodles, .kitchenfood, .kids, .tuesday {
+    width: 18em;
+    padding: 1em;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*LOCATION PAGE*/
+.location {
+    text-align: center;
+    width: 50em;
+    margin: auto;
+}
+
+.locationtext {
+    display: inline-block;
+    padding: 1em;
+}
+
+.locationtext h2 {
+    color: rgb(0, 0, 0);
+    margin-bottom: 0;
+}
+
+.locationtext h3 {
+    color: #CC414F;
+}
+
+.locationtext p {
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+
+.locationpic {
+    display: inline-block;
+    width: 50%;
+}
+
+.locationpic img {
+    height: 16em;
+    width: 25em;
+}
+
+@media only screen and (max-width: 30em) {
+    .location {
+        clear: both;
+        width: 100%;
+    }
+    .locationtext {
+        display: inline;
+    }
+    .locationpic {
+        width: 100%;
+    }
+    .locationpic img {
+        clear: both;
+        height: 10em;
+        max-width: 75%;
+    }
+}
+
+/*GALLERY PAGE*/
+.photos img {
+    width: 47%;
+    padding: 1em;
+}
+
+.photos {
+    float: left;
+}
+
+@media only screen and (max-width: 30em) {
+    .photos img {
+        width: 40%;
+    }
+}

@@ -49,9 +49,7 @@ a:hover {
     margin-top: 3em;
     padding: 1em;
     background-color: rgb(255, 255, 255);
-    position: absolute;
-    width: 100%;
-    left: 0;
+    
 }
 
 .footer h3 {
@@ -283,7 +281,7 @@ a:hover {
 
 /*GALLERY PAGE*/
 .photos img {
-    width: 40%;
+    width: 47%;
     padding: 1em;
 }
 

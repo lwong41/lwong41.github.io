@@ -30,10 +30,12 @@ img {
     font-weight: bold;
 }
     
-@media only screen and (max-width: 30em) {
+@media only screen and (max-width: 26em) {
     .nav li {
-        font-size: 0.8em;
-        margin: auto auto auto 1em;
+        font-size: 0.9em;
+    }
+    .nav ul {
+        margin: 1em auto auto 1.2em;
     }
 }
 
@@ -80,6 +82,12 @@ a:hover {
 
 .topmenu {
     text-align: center;
+}
+
+@media only screen and (max-width: 26em) {
+    .topmenu {
+        padding: 1em;
+    }
 }
 
 .menu h2, h3 {
@@ -231,46 +239,44 @@ a:hover {
 /*LOCATION PAGE*/
 .location {
     text-align: center;
-    width: 50em;
+    width: 45em;
     margin: auto;
 }
-
+    
 .locationtext {
     display: inline-block;
-    padding: 1em;
+    padding-right: 1em;
+    margin-left: 0;
 }
-
+    
 .locationtext h2 {
     color: rgb(0, 0, 0);
     margin-bottom: 0;
 }
-
+    
 .locationtext h3 {
     color: #CC414F;
 }
-
+    
 .locationtext p {
     margin-top: 0;
     margin-bottom: 2em;
 }
-
+    
 .locationpic {
     display: inline-block;
     width: 50%;
 }
-
+    
 .locationpic img {
     height: 16em;
     width: 25em;
 }
 
-@media only screen and (max-width: 30em) {
+@media only screen and (max-width: 26em) {
     .location {
         clear: both;
         width: 100%;
-    }
-    .locationtext {
-        display: inline;
     }
     .locationpic {
         width: 100%;
@@ -279,6 +285,7 @@ a:hover {
         clear: both;
         height: 10em;
         max-width: 75%;
+        margin: auto;
     }
 }
 
@@ -292,8 +299,20 @@ a:hover {
     float: left;
 }
 
-@media only screen and (max-width: 30em) {
+@media only screen and (max-width: 26em) {
     .photos img {
-        width: 40%;
+        width: 43%;
+        padding-top: 0;
+        padding-right: 0;
+        margin-top: 1em;
+    }
+}
+
+@media only screen and (max-width: 49em) {
+    .photos img {
+        width: 46%;
+        padding-top: 0;
+        padding-right: 0;
+        margin-top: 1em;
     }
 }

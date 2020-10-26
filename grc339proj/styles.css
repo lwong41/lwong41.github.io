@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #8ac0e2;
+    font-family: 'Raleway', sans-serif;
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+a {
+    color: #8ac0e2;
+    text-decoration: none;
+}
+#main-menu span { /* styling for lines between menu options */
+    display: block;
+    width: 5px;
+    height: 50px;
+    background: #8ac0e2;
+}
+h1:first-child {
+    margin: 1rem;
+    font-size: 3rem;
+}
+
+/* just to test text beneath
+main{
+    margin: 7rem;  bump main under header, start with 8em by doing 2 x 4
+}
+main p {
+    font-size: 2rem;
+} */
+
+header { /* needs to be header not nav bc header includes logo and nav doesn't */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* not really sure how this is working but it's aligning my menu to the right which is what I wanted */
+    gap: 1rem;
+    position: fixed; /* makes header sticky, but gets cut short so add left and right 0 */
+    left: 0;
+    right: 0;
+    top: 0; /* make sure header is stuck at top */
+}
+
+nav ul, nav li {
+    list-style: none; /* gets rid of bullet points */
+    margin: 0;
+    padding: 0;
+}
+nav > ul {
+    display: flex;
+    font-size: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    letter-spacing: 2px;
+}
+nav > ul > li { /* being very specific here to make sure I'm only targeting what I need to */
+    /* min-width: 12ch; /* 12ch = 12 characters, originally column width kind of fixed so look at number of characters and set a minimum width */
+    position: relative;
+    height: 100%;
+    flex: 1; /* short-hand for saying flex-grow: 1; shrink: 1; basis: auto, vertically gives enough room */
+}
+nav a {
+    display: block;
+    height: 100%;
+    line-height: 100px; /* not the best way to do this because things like wrap could make it inconsistent */
+    padding: 0 1rem;
+    /* border-left: 5px solid #8ac0e2; */
+}
+nav a:hover {
+    color: #e3accf;
+    letter-spacing: 0;
+}
+
+nav li:hover ul {
+    display: block;
+}
+
+.toggle {
+    display: none;
+}
+
+@media (max-width:1000px) { /* using 400px bciPhone width is 375px */
+    img {
+        width: 60%;
+    }
+
+    header {
+        min-height: 5.5rem;
+        z-index: 1;
+    }
+    nav {
+        margin-top: -1000px; /* pushing menu off the screen vertically */
+    }
+    nav a {
+        line-height: 70px;
+    }
+    .show-menu nav { /* this will bring menu on to screen */
+        margin-top: 0;
+    }
+    header, nav > ul {
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    /* everything below focused on hamburger menu */
+    .toggle { /* div by default is displayed as block so don't need to specify */
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+    .toggle span { /* span by default is inline */
+        display: block;
+        width: 40px;
+        height: 4px;
+        margin-bottom: 8px;
+        background: #8ac0e2;
+        z-index: 1; /* so it appears on top of everything else */
+    }
+    /* work on hamburger transition/animation */
+    .show-menu .toggle span:nth-child(2) {
+        opacity: 0;
+    }
+    .show-menu .toggle span:first-child {
+        transform: rotate(45deg) translateY(17px); /* used guess and check to get to 17px */
+    }
+    .show-menu .toggle span:last-child {
+        transform: rotate(-45deg) translateY(-17px);
+    }
+}

@@ -1,1 +1,99 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugar Rush</title>
+    <!-- didn't end up using FontAwesome <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" /> -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+     
+    <header>
+        <h1><a href="index.html" class="logo"><img src="logo.svg" alt="Sugar Rush Logo" class="logo"></a></h1>
+        <nav id="main-menu"> <!-- this id is what the labelled by at the bottom is referring to -->
+            <!-- figure out later
+                <ul class="icons">
+                <li><i class="fas fa-search"></i></li>
+                <span></span>
+                <li><i class="fas fa-shopping-cart"></i></li>
+            </ul> -->
+            <ul>
+                <li><a href="index.html" class="current">Home</a></li>
+                <span></span>
+                <li><a href="about.html">About</a></li>
+                <span></span>
+                <li><a href="shop.html">Shop</a></li>
+                <span></span>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="toggle" tabindex="-1" aria-hidden="true" aria-labelledby="#main-menu"> <!-- aria-hidden and aria-labelledby just giving some logic to screen readers (implementing accessibility support) -->
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <img src="images/home-hero.jpg" alt="Bakery station"> <!-- image from https://unsplash.com/photos/sl7jqLgd7lo -->
+        <div class="container">
+            <h2>Best Sellers</h2>
+            <div class="grid">
+                <div class="col-1">
+                    <img src="images/home-cake.jpg" alt="Confetti Cake"> <!-- image from https://unsplash.com/photos/m4A2KWBU7xI -->
+                    <p><a href='#'>Rainbow Confetti Cake</a></p>
+                </div>
+
+                <div class="col-1">
+                    <img src="images/home-cookies.jpg" alt="Chocolate Chip Cookies"> <!-- image from https://unsplash.com/photos/9uZSryOmh24 -->
+                    <p><a href='#'>Chocolate Chip Cookies</a></p>
+                </div>
+
+                <div class="col-1">
+                    <img src="images/home-cupcakes.jpg" alt="Fruity Cupcakes"> <!-- image from https://unsplash.com/photos/V4MBq8kue3U -->
+                    <p><a href='#'>Fresh & Fruity Cupcakes</a></p>
+                </div>
+
+                <div class="col-1">
+                    <img src="images/home-macaron.jpg" alt="Macarons"> <!-- image from https://unsplash.com/photos/7JUIoBfVhME -->
+                    <p><a href='#'>Chai Chocolate Macarons</a></p>
+                </div>
+            </div> <!-- closing grid -->
+        
+            <div class="home-about">
+                <h2>About Sugar Rush Bakery</h2>
+                <div class="grid">
+                    <div class="col-2">
+                        <img src="images/home-about.jpg" alt="Mother and daughter baking"> <!-- image from https://www.pexels.com/photo/pensive-grandmother-with-granddaughter-having-interesting-conversation-while-cooking-together-in-light-modern-kitchen-3768146/ -->
+                    </div>
+                    <div class="col-2">
+                        <p>Inspired by a childhood love for baking sweet treats, Sugar Rush Bakery was created!<br>
+                            Sugar Rush Bakery showcases a unique list of baked goods made from simple ingredients, meant to bring a little sweetness into anyone's life!</p>
+                        <h4><a href='about.html'>Our Story</a></h4>
+                    </div>
+                </div> <!-- closing grid -->
+            </div> <!-- closing class home-about  -->
+
+
+        </div> <!-- closing container -->
+    </main>
+
+    <footer>
+        <h5>We can't wait to see you!</h5>
+        <p>Sugar Rush Bakery<br>
+        (805) 111-2222<br>
+        123 Sugar Ave, San Luis Obispo, CA 93405</p>
+        <p><a href="citation.html">Photos Courtesy of Unsplash & Pexels</a></p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

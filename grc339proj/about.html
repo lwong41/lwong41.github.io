@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugar Rush | About</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1><a href="index.html" class="logo"><img src="logo.svg" alt="Sugar Rush Logo" class="logo"></a></h1>
+        <nav id="main-menu"> <!-- this id is what the labelled by at the bottom is referring to -->
+            <!-- figure out later
+                <ul class="icons">
+                <li><i class="fas fa-search"></i></li>
+                <span></span>
+                <li><i class="fas fa-shopping-cart"></i></li>
+            </ul> -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <span></span>
+                <li><a href="about.html" class="current">About</a></li>
+                <span></span>
+                <li><a href="shop.html">Shop</a></li>
+                <span></span>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="toggle" tabindex="-1" aria-hidden="true" aria-labelledby="#main-menu"> <!-- aria-hidden and aria-labelledby just giving some logic to screen readers (implementing accessibility support) -->
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <img src="images/about-hero.jpg" alt="Mother and Daughter Baking"> <!-- image from https://www.pexels.com/photo/pensive-grandmother-with-granddaughter-having-interesting-conversation-while-cooking-together-in-light-modern-kitchen-3768146/ -->
+        <div class="container">
+            <h2>About Sugar Rush Bakery</h2>
+            <div class="grid">
+                <div class="col-2">
+                    <img src="images/about-flour.jpg" alt="Family written in flour"> <!-- image from https://unsplash.com/photos/df80NBQyziU -->
+                </div>
+                <div class="col-2">
+                    <p>Sugar Rush Bakery is a family-run bakery that was inspired by a childhood love for baking sweet treats. Sugar Rush got it's name from the nostalgic, exhilirating rush you would get as a kid when consuming lots of delicious sweet treats!</p>
+                    <p> One of Sugar Rush's core values is the belief that time is precious and should be spent doing things you love. The Sugar Rush Bakery family is a tight-knit group of bakers that take joy, love, and pride into baking. Each morning, we get to spend time together doing something we love. And then, we get to see the smiles that light up customer's faces as they purchase and taste our sweet treats!</p>
+                    <!-- About Info content story based off of http://susiecakes.com/about/ -->
+                </div>
+            </div>
+                <p>Additionally, Sugar Rush prides itself on showcasing unique baked goods made from simple ingredients. Everything is baked in-house the morning of, so you're guaranteed to get fresh and delicious treats when you stop by!<br>
+                We hope we're able to bring some sweetness into your life with our baked goodies! Whether it be for a big celebration or just to treat yourself, we'll have something that'll leave you smiling and happy!</p>
+        </div>
+    </main>
+
+    <footer>
+        <h5>We can't wait to see you!</h5>
+        <p>Sugar Rush Bakery<br>
+        (805) 111-2222<br>
+        123 Sugar Ave, San Luis Obispo, CA 93405</p>
+        <p><a href="citation.html">Photos Courtesy of Unsplash & Pexels</a></p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
